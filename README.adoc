@@ -1,4 +1,8 @@
 = FreewarStats
 Freewar Statistics
 
+== Code Files
+* https://github.com/KasparJohannesSchneider/FreewarStats/blob/main/main.py[Extract data from html]
+* https://github.com/KasparJohannesSchneider/FreewarStats/blob/main/analysis.ipynb[Analyse the data]
+
 image::https://raw.githubusercontent.com/KasparJohannesSchneider/FreewarStats/main/FreewarStatistics.png[Freewar Statistics]
