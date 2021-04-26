@@ -1,2 +1,0 @@
-# FreewarStats
-Freewar Statistics

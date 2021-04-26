@@ -1,0 +1,4 @@
+= FreewarStats
+Freewar Statistics
+
+image::https://raw.githubusercontent.com/KasparJohannesSchneider/FreewarStats/main/FreewarStatistics.png[Freewar Statistics]
