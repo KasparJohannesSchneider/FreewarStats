@@ -6,6 +6,7 @@ from datetime import datetime
 # Delete the files after extracting the values
 del_files = True
 
+
 def main():
     csv_path = Path.cwd() / 'FreewarStatistics.csv'
     downloads_path = Path.home() / 'Downloads'
@@ -67,7 +68,7 @@ def main():
     ]
     with open(csv_path, 'a', newline='') as csv_file:
         csv_writer = csv.writer(csv_file, delimiter=',')
-        col_list = ['']*(len(csv_cols) + 2)
+        col_list = [''] * (len(csv_cols) + 2)
         col_list[0] = datetime.now().strftime('%d.%m.%y %H:%M')
         col_list[-1] = '0'
         for i in range(len(csv_cols)):
@@ -80,6 +81,7 @@ def main():
             file.unlink()
         html_path.unlink()
         folder_path.rmdir()
+
 
 if __name__ == '__main__':
     main()
