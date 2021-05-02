@@ -15,6 +15,11 @@ def main():
     main_path = folder_path / 'main.html'
     item_path = folder_path / 'item.html'
 
+    paths_dict = {
+                     'folder_path': folder_path,
+                     'html_path': html_path
+    }
+
     # Check if the file exists
     assert main_path.exists(), 'The file ' + html_path.__str__() + ' doesn\'t exist!'
     assert csv_path.exists(), 'The file ' + csv_path.__str__() + ' doesn\'t exist!'
@@ -44,6 +49,8 @@ def main():
             print(value)
             results[src_term] = value
         else:
+            if del_files:
+                delete_files(paths_dict)
             raise Exception('Wert für "' + src_term + '" nicht gefunden!')
 
     src_term = 'Erfahrung'
@@ -55,6 +62,8 @@ def main():
         print(value)
         results[src_term] = value
     else:
+        if del_files:
+            delete_files(paths_dict)
         raise Exception('Wert für "' + src_term + '" nicht gefunden!')
 
     # write to the csv File
@@ -75,12 +84,19 @@ def main():
             col_list[i + 1] = str(results[csv_cols[i]])
         csv_writer.writerow(col_list)
 
-    # Delete the files
     if del_files:
-        for file in folder_path.iterdir():
-            file.unlink()
-        html_path.unlink()
-        folder_path.rmdir()
+        delete_files(paths_dict)
+
+
+def delete_files(paths: dict):
+    # Delete the files
+    for file in paths['folder_path'].iterdir():
+        file.unlink()
+    paths['html_path'].unlink()
+    paths['folder_path'].rmdir()
+    print('###############################')
+    print('# All Files have been deleted #')
+    print('###############################')
 
 
 if __name__ == '__main__':
