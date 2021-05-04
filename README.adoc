@@ -5,6 +5,6 @@ Freewar Statistics
 * https://github.com/KasparJohannesSchneider/FreewarStats/blob/main/main.py[Extract data from html]
 * https://github.com/KasparJohannesSchneider/FreewarStats/blob/main/analysis.ipynb[Analyse the data]
 
-image::https://raw.githubusercontent.com/KasparJohannesSchneider/FreewarStats/main/FreewarStatistics.png[Freewar Statistics]
-image::https://raw.githubusercontent.com/KasparJohannesSchneider/FreewarStats/main/FreewarStatistics_years.png[Freewar Statistics]
+image::https://raw.githubusercontent.com/KasparJohannesSchneider/FreewarStats/main/FreewarStatistics.svg[Freewar Statistics]
+image::https://raw.githubusercontent.com/KasparJohannesSchneider/FreewarStats/main/FreewarStatistics_years.svg[Freewar Statistics]
 
