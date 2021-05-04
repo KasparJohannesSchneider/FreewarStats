@@ -16,8 +16,8 @@ def main():
     item_path = folder_path / 'item.html'
 
     paths_dict = {
-                     'folder_path': folder_path,
-                     'html_path': html_path
+        'folder_path': folder_path,
+        'html_path': html_path
     }
 
     # Check if the file exists
