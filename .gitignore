@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+# experimental
+cv_to_db.py
+FreewarStatistics.db
+
 # Distribution / packaging
 .Python
 build/
